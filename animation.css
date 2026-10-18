@@ -1,0 +1,111 @@
+@keyframes fadeIn {
+     from { opacity: 0; }
+     to { opacity: 1; }
+ }
+ 
+ .fade-in {
+     animation: fadeIn 1s ease-in-out;
+ }
+
+ @keyframes undertale {
+    0% {
+        content: "Undertale";
+        color: #000000;
+    }
+    10% {
+        content: "决心";
+        color: #ff0000;
+    }
+    20% {
+        content: "勇气";
+        color: orange;
+    }
+    30% {
+        content: "正义";
+        color: #FFFF00;
+    }
+    40% {
+        content: "仁慈";
+        color: #00FF00;
+    }
+    50% {
+        content: "耐心";
+        color: aqua;
+    }
+    60% {
+        content: "诚实";
+        color: #0000FF;
+    }
+    70% {
+        content: "毅力";
+        color: #800080;
+    }
+    80% {
+        content: "*当你看到这段话的时候，你充满了决心";
+        color: #FFFFFF;
+    }
+    100% {
+        content: "传说之下";
+        color: #000000;
+    }
+ }
+.undertale-text {
+    position: relative;
+    /* 预留空间，防止文字跳动变形，可以自己调字号 */
+    font-size: 1rem;
+}
+.undertale-text::after {
+    content: "Undertale";
+    animation: undertale 30s;
+}
+@keyframes genshin {
+    0% {
+        content: "Genshin Impact";
+        color: #000000;
+    }
+    10% {
+        content: "抗争";
+        color: #ff0000;
+    }
+    20% {
+        content: "自由";
+        color: cyan;
+    }
+    30% {
+        content: "契约";
+        color: #FFFF00;
+    }
+    40% {
+        content: "智慧";
+        color: #00FF00;
+    }
+    50% {
+        content: "怜爱";
+        color: aqua;
+    }
+    60% {
+        content: "正义";
+        color: #0000FF;
+    }
+    70% {
+        content: "永恒";
+        color: #800080;
+    }
+    80% {
+        content: "原神";
+        color: #000000;
+    }
+    100% {
+        content: "原神";
+        color: #000000;
+    }
+ }
+ .genshin-text {
+    position: relative;
+    /* 预留空间，防止文字跳动变形，可以自己调字号 */
+    font-size: 1rem;
+}
+.genshin-text::after {
+    content: "Genshin Impact";
+    animation: genshin 25s;
+}
