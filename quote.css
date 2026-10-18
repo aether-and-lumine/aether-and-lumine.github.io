@@ -1,0 +1,69 @@
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    margin: 0.5rem 1rem;
+    font-weight: 400;
+    position: relative;
+    padding: 1rem;
+    border-left: 3px solid #ddd;
+    background: #f8f8f8;
+    background-image:linear-gradient(0deg,#92fe9d 0%, #00c9ff 100%);
+    border-radius: 10px;
+}
+
+table {
+    background: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+}
+
+blockquote:before {
+    display: block;
+    margin-bottom: 0.6rem;
+}
+
+blockquote:after {
+    display: block;
+    margin-bottom: 0.6rem;
+    text-align: right;
+    font-size: 1rem;
+    content: "by AetherAndLumine";
+    color: darkgrey;
+}
+
+blockquote.warn {
+    border-color: #ff4136;
+    color: #666;
+}
+
+blockquote.note {
+    border-color: #5f9fd6;
+    color: #666;
+    background-image:linear-gradient(#000 0%,fff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+blockquote.do-you-know {
+    border-color: #5f9fd6;
+    color: #666;
+}
+
+blockquote.warn:before {
+    content: "警告：";
+    color: #ff4136;
+}
+
+blockquote.note:before {
+    content: "备注：";
+    color: #5f9fd6;
+}
+
+blockquote.do-you-know:before {
+    content: "你知道吗：";
+    color: #5f9fd6;
+}
