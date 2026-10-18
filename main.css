@@ -1,0 +1,52 @@
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    margin: 0.5rem 1rem;
+    font-weight: 400;
+    position: relative;
+    padding: 1rem;
+    border-left: 3px solid #ddd;
+    background: #f8f8f8;
+    border-radius: 10px;
+}
+
+table {
+    background: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+}
+
+blockquote:before {
+    display: block;
+    margin-bottom: 0.6rem;
+}
+
+blockquote:after {
+    display: block;
+    margin-bottom: 0.6rem;
+    content: "by HelloWorldForGao";
+    color: darkgrey;
+}
+
+blockquote.warn {
+    border-color: #ff4136;
+    color: #666;
+}
+
+blockquote.note {
+    border-color: #5f9fd6;
+    color: #666;
+}
+
+blockquote.warn:before {
+    content: "警告：";
+    color: #ff4136;
+}
+
+blockquote.note:before {
+    content: "备注：";
+    color: #5f9fd6;
+}
